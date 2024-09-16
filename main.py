@@ -1,19 +1,33 @@
-from math import sqrt
-
+"""
+Fichier main.py
+"""
 #### Fonction secondaire
-
-
 def isprime(p):
+    """
+    Détermine si p est premier
 
-    # votre code ici
+    Args:
+        p: valeur entière positive
 
-    pass
+    Returns :
+            isprime(p) : 'p est premier' ou 'p n'est pas premier' 
+
+    """
+    if p<=1:
+        return False
+    for d in range(2,p):
+        if p%d==0:
+            return False
+    return True
+
 
 #### Fonction principale
 
 
 def main():
-
+    """
+    Vérifie que isprime() fonctionne correctement
+    """
     # vos appels à la fonction secondaire ici
 
     for n in range(100):
